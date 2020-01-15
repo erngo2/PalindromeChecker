@@ -20,6 +20,8 @@ public boolean palindrome(String word)
   String drow = reverse(word);
   drow = onlyLetters(drow);
   word = onlyLetters(word);
+  word = word.toLowerCase();
+  drow = drow.toLowerCase();
   if(word.equals(drow))
     return true;
   return false;
